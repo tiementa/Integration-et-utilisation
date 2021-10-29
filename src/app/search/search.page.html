@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>search</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<div>
+<ion-img src="assets/images/search.png"></ion-img>
+</div>
+<div>
+<ion-searchbar (ion-input)="filterlist($event)" value="search a user"></ion-searchbar>
+</div>
+<ion-item>
+  <ion-label>login</ion-label>
+  <ion-label>Fullname</ion-label">
+</ion-item>
+<ion-item *ngFor="let liste of list ">
+
+    <ion-label>{{liste.Fullname}}</ion-label>
+    <ion-label>{{liste.email}}</ion-label>
+</ion-item>
+</ion-content>

@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons><br>
+    <ion-title>reinitialise</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="floating" color="primary">Ancien mot de passe</ion-label>
+    <ion-input type="password" placeholder="Ancien mot de passe" required></ion-input>
+  </ion-item><ion-item>
+    <ion-label position="floating" color="primary">Nouveau mot de passe</ion-label>
+    <ion-input type="password"  placeholder="Nouveau mot de passe"  required></ion-input>
+  </ion-item><ion-item>
+    <ion-label position="floating" color="primary">Confirmer mot de passe</ion-label>
+    <ion-input type="password" placeholder="Confirmer mot de passe" required></ion-input>
+  </ion-item>
+  <ion-button  expand="block" (click)="show()" >Valider</ion-button>
+</ion-content>
